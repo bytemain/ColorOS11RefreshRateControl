@@ -9,3 +9,5 @@
 .externalNativeBuild
 
 *.log
+
+app/release

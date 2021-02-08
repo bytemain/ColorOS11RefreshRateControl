@@ -10,6 +10,7 @@ android {
     defaultConfig {
         applicationId "qshn.c11.refresh_rate"
         minSdkVersion 21
+        //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
@@ -29,7 +30,6 @@ android {
 }
 
 dependencies {
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    releaseImplementation 'jp.wasabeef:takt-no-op:2.0.1'
-    debugImplementation 'jp.wasabeef:takt:2.0.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "jp.wasabeef:takt:2.0.1"
 }
