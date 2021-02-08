@@ -1,8 +1,12 @@
 <resources>
-    <string name="app_name">S20 Refresh Rate Control</string>
-    <string name="info">Simple app to force set refresh rate. Thanks to Max Weinbach for finding this tweak and Rohit Shetty (TechyLogy YT) for testing this app.\nDeveloped by @SatySatsZB #hex_ installer\n\n\nThis app also includes QS tiles for changing the refresh rates. Check in your QuickSettings Panel
+    <string name="app_name">屏幕刷新率</string>
+    <string name="usage">1. 首先去 `显示与亮度 -> 更多 -> 屏幕刷新率`  选中智能切换。\n2. 点击 `设置 90Hz` 按钮即可。
     </string>
-    <string name="fps_info">You can confirm the current FPS on the top right corner of this app.</string>
-    <string name="set_120hz">Set 120Hz</string>
-    <string name="set_96hz">Set 96Hz</string>
+    <string name="info">一个简单的 APP 用来强制设置屏幕刷新率。\n@SatySatsZB 开发\n酷安 @情诗和你 修改\n\n你也可以使用这个 APP 提供的快捷磁贴来更改刷新率。
+    </string>
+    <string name="set_120hz">设置 120Hz</string>
+    <string name="set_96hz">设置 96Hz</string>
+    <string name="set_90hz">设置 90Hz</string>
+    <string name="go_setting">显示与亮度</string>
+    <string name="go_dev">开发者选项</string>
 </resources>

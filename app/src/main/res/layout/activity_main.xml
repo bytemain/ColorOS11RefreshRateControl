@@ -10,19 +10,34 @@
         android:orientation="vertical">
 
     <Button
-            android:id="@+id/set96"
-            android:textAllCaps="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/set_96hz"/>
-
+            android:textSize="16sp"
+            android:gravity="center"
+            android:id="@+id/goDev"
+            android:text="@string/go_dev"
+            />
     <Button
-            android:layout_marginTop="8dp"
-            android:id="@+id/set120"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:id="@+id/goSetting"
+            android:text="@string/go_setting"
+            />
+    <Button
+            android:id="@+id/set90"
             android:textAllCaps="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/set_120hz" />
+            android:text="@string/set_90hz"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="@string/usage" />
 
     <TextView
             android:layout_width="wrap_content"
@@ -31,13 +46,5 @@
             android:textSize="16sp"
             android:gravity="center"
             android:text="@string/info" />
-
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:textSize="16sp"
-            android:gravity="center"
-            android:text="@string/fps_info" />
 
 </LinearLayout>

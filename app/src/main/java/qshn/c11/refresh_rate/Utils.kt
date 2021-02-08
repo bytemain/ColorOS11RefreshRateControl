@@ -1,4 +1,4 @@
-package sszb.s20.refresh
+package qshn.c11.refresh_rate
 
 import android.content.ContentValues
 import android.content.Context
@@ -9,6 +9,7 @@ private const val MIN_REFRESH_RATE = "min_refresh_rate"
 private const val PEAK_REFRESH_RATE = "peak_refresh_rate"
 
 enum class RefreshRate(val refreshRateValue: String) {
+    FiftyNine("59.0"),
     NinetySix("96.0"),
     HundredTwenty("120.0")
 }
@@ -20,9 +21,8 @@ fun setConfig(context: Context, key: String, value: String) {
         contentValues.put("name", key)
         contentValues.put("value", value)
         contentResolver.insert(Uri.parse("content://settings/system"), contentValues)
-        Toast.makeText(context, "Applied", Toast.LENGTH_SHORT).show()
     } catch (th: Exception) {
-        Toast.makeText(context, "Failed to setConfig", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, "Failed to set value $value", Toast.LENGTH_SHORT).show()
         th.printStackTrace()
     }
 }
@@ -30,4 +30,9 @@ fun setConfig(context: Context, key: String, value: String) {
 fun Context.setRefreshRate(rate: RefreshRate) {
     setConfig(this, MIN_REFRESH_RATE, rate.refreshRateValue)
     setConfig(this, PEAK_REFRESH_RATE, rate.refreshRateValue)
+}
+fun Context.set90RefreshRate() {
+    setRefreshRate(RefreshRate.NinetySix)
+    setRefreshRate(RefreshRate.FiftyNine)
+    Toast.makeText(this, "设置成功", Toast.LENGTH_SHORT).show()
 }
