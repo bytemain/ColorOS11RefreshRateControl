@@ -30,4 +30,6 @@ android {
 
 dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    releaseImplementation 'jp.wasabeef:takt-no-op:2.0.1'
+    debugImplementation 'jp.wasabeef:takt:2.0.1'
 }

@@ -33,6 +33,7 @@ fun Context.setRefreshRate(rate: RefreshRate) {
 }
 fun Context.set90RefreshRate() {
     setRefreshRate(RefreshRate.NinetySix)
+    Toast.makeText(this, "正在设置第一次，请稍等", Toast.LENGTH_SHORT).show()
     setRefreshRate(RefreshRate.FiftyNine)
-    Toast.makeText(this, "设置成功", Toast.LENGTH_SHORT).show()
+    Toast.makeText(this, "设置成功，请等待生效。", Toast.LENGTH_SHORT).show()
 }

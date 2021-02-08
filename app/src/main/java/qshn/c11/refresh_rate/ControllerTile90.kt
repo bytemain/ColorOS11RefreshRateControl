@@ -20,5 +20,4 @@ class ControllerTile90 : TileService() {
         super.onClick()
         set90RefreshRate()
     }
-
 }
