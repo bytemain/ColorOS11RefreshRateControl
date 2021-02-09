@@ -11,3 +11,5 @@
 *.log
 
 app/release
+app/turkcell
+app/skred

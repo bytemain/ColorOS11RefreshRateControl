@@ -1,7 +1,5 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
 
 android {
@@ -15,10 +13,27 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    // Specifies one flavor dimension.
+    flavorDimensions "fake"
+    productFlavors {
+        turkcell {
+            dimension "fake"
+            applicationId "com.turkcell.bip"
+        }
+        skred {
+            dimension "fake"
+            applicationId "mobi.skred.app"
+        }
+    }
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all  {
+            outputFileName = "屏幕刷新率_${variant.flavorName}_${variant.buildType.name}_v${variant.versionName}.apk"
         }
     }
     lintOptions {
