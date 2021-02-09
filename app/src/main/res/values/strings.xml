@@ -7,4 +7,7 @@
     <string name="set_90hz">设置 90Hz</string>
     <string name="go_setting">显示与亮度</string>
     <string name="go_dev">开发者选项</string>
+    <string name="text_boot">开机自启</string>
+    <string name="preference_file_key">settings</string>
+    <string name="settings_boot">settings_boot</string>
 </resources>

@@ -31,6 +31,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/set_90hz"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_boot"
+        android:id="@+id/cbBoot"
+        />
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -19,10 +19,12 @@ android {
         turkcell {
             dimension "fake"
             applicationId "com.turkcell.bip"
+            versionNameSuffix "-com.turkcell.bip"
         }
         skred {
             dimension "fake"
             applicationId "mobi.skred.app"
+            versionNameSuffix "-mobi.skred.app"
         }
     }
     buildTypes {
@@ -33,7 +35,7 @@ android {
     }
     android.applicationVariants.all { variant ->
         variant.outputs.all  {
-            outputFileName = "屏幕刷新率_${variant.flavorName}_${variant.buildType.name}_v${variant.versionName}.apk"
+            outputFileName = "RefreshRateControl_${variant.buildType.name}_v${variant.versionName}.apk"
         }
     }
     lintOptions {
@@ -46,5 +48,7 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //noinspection GradleCompatible
+    implementation "com.android.support:support-compat:28.0.0"
     implementation "jp.wasabeef:takt:2.0.1"
 }
