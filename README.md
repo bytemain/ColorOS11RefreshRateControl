@@ -1,3 +1,7 @@
+# 本仓库不再更新，功能已经合并进 ColorOS助手 <https://github.com/lengthmin/ColorOSDualApp>
+# 欢迎前往查看
+
+---
 # ColorOS 11 屏幕刷新率修改
 
 强制修改屏幕刷新率为 90Hz（如果你的手机支持 120Hz，也会锁到 120 Hz）。  
