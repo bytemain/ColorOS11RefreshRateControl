@@ -1,4 +1,4 @@
-# 本仓库不再更新，功能已经合并进 ColorOS助手 <https://github.com/lengthmin/ColorOSDualApp>
+# 本仓库不再更新，功能已经合并进 ColorOS助手 <https://github.com/lengthmin/ColorOSHelper>
 # 欢迎前往查看
 
 ---
